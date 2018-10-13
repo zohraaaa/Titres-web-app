@@ -1,0 +1,27 @@
+/*responsive in mobile devices*/
+@media screen and (max-width: 720px){
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	#container{
+		margin: 0;
+		padding: 0;
+
+	}
+	div#contain{
+		display: none;
+	}
+	.a1{
+		display: none;
+	}
+	.a2{
+display: none;
+	}
+	.a3{
+display: none;
+	}
+	.a4{
+display: none;
+	}
+}

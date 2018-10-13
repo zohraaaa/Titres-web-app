@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">		
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		#container {
+		  width: 100%;
+		  height: 97vh;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		   -webkit-flex-align: center;
+		  -webkit-box-pack: center;
+		  -webkit-justify-content: center;
+		  -webkit-flex-pack: center;
+		  z-index: -100;
+		  -webkit-perspective: 700px;
+		  box-sizing: border-box;
+		  border: 14px solid white;
+		}
+		#img {
+			position: absolute;
+			top: 0px;
+			right: 822px;
+			width: 500px;
+		}
+		#contain #text {
+		  display: block;
+		  margin-top: 3%;
+		  margin-left: 5%;
+		  margin-right: 5%;
+		  border-top: 2px solid black;
+		}
+		#contain #text:last-child {
+		  font-size: 20px;
+		  padding-bottom: 1rem;
+		  border-top: none;
+		  font-weight: bold;
+		}
+		#contain:hover {
+		  box-shadow: 0px 60px 30px -30px rgba(0, 0, 0, 0.3);
+		  -webkit-transition: all 600ms ease;
+		  -webkit-animation-play-state: paused;
+		}
+		#contain.right:hover {
+		  -webkit-transform: rotate3d(-30, 0, -10, 5deg) translate3d(10px, -10px, 20px);
+		}
+		#contain.left:hover {
+		  -webkit-transform: rotate3d(30, 0, 10, 5deg) translate3d(-10px, -10px, 20px);
+		}
+
+		@-webkit-keyframes breathe {
+		  0% {
+		    box-shadow: 0px 13px 30px -10px rgba(0, 0, 0, 0.8);
+		    -webkit-transform: rotate3d(0, 0, 0, 5deg) translate3d(0, 0, 0);
+		    opacity: .9;
+		  }
+		  50% {
+		    box-shadow: 0px 60px 30px -30px rgba(0, 0, 0, 0.3);
+		    -webkit-transform: rotate3d(-30, 0, -10, 2deg) translate3d(2px, -2px, 30px);
+		    opacity: 1;
+		  }
+		  100% {
+		    box-shadow: 0px 13px 30px -10px rgba(0, 0, 0, 0.8);
+		    -webkit-transform: rotate3d(0, 0, 0, 5deg) translate3d(0, 0, 0);
+		    opacity: 1;
+		  }
+		}
+
+		/*logo design*/
+		#loading {
+		  text-transform: uppercase;
+		  font-family:  'Chiller';
+		  font-weight: bold;
+		  font-size: 70pt;
+		  text-align: center;
+		  height: 120px;
+		  line-height: 145px;
+		  vertical-align: bottom;
+		  position: absolute;
+		  left: 200px;
+		  right: 0;
+		  top: 2%;
+		  bottom: 0;
+		  display: block;
+		  background-image: url("wave.PNG");
+		  -webkit-background-clip: text;
+		  color: transparent;
+		  text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+		  animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+		  background-size: 200px 200px;
+		  background-repeat: repeat-x;
+		  opacity: 1;
+		}
+
+		@keyframes wave-animation {
+		  0% {
+		    background-position: 0 bottom;
+		  }
+		  100% {
+		    background-position: 200px bottom;
+		  }
+		}
+		@keyframes loading-animation {
+		  0% {
+		    background-size: 200px 0px;
+		  }
+		  100% {
+		    background-size: 200px 200px;
+		  }
+		}
+
+		h2.shadow{
+		  color: #2c2c2c;
+		  letter-spacing: .05em;
+		  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+		  position: absolute;
+		  top: 30%;
+		  right: 850px;
+		  font-family: "Harrington";
+		  font-weight: bolder;
+		  color: #00004d;
+		}
+	</style>
+
+	<script type="text/javascript">
+	
+	</script>
+</head>
+<body>
+	<div id="container">
+		<img src="flo.PNG" id="img">
+
+		<h2 class="shadow"> INFORMATION 👉</h2>
+		<div class="w3-content w3-display-container">
+
+		<div class="w3-display-container mySlides">
+		  <img src="a1.PNG" style="width:50%; height: 50%; margin-left: 300px;
+		  margin-top: 80px;">
+		  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black" style="position: absolute;
+		   left: 630px; margin-top: 20px; font-size: 23px; font-family: Harrington; font-weight: bold;">
+		     Play : For go to the game page.
+		  </div>
+		</div>
+
+		<div class="w3-display-container mySlides">
+		  <img src="a2.PNG" style="width:30%; height: 50%; margin-left: 580px;
+		  margin-top: 80px;">
+		  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black" style="position: absolute;
+		   left: 630px; margin-top: 20px; font-size: 23px; font-family: Harrington; font-weight: bold;">
+		    Generall information of game
+		  </div>
+		</div>
+
+		<div class="w3-display-container mySlides">
+		  <img src="a3.PNG" style="width:30%; height: 50%; margin-left: 580px;
+		  margin-top: 80px;">
+		  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black" style="position: absolute;
+		   left: 630px; margin-top: 20px; font-size: 23px; font-family: Harrington; font-weight: bold;">
+		   It has an error for you
+		  </div>
+		</div>
+
+		<div class="w3-display-container mySlides">
+		  <img src="a4.PNG" style="width:30%; height: 50%; margin-left: 580px;
+		  margin-top: 80px;">
+		  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black" style="position: absolute;
+		   left: 600px; margin-top: 20px; font-size: 23px; font-family: Harrington; font-weight: bold;">
+		     For play game better
+		  </div>
+		</div>
+
+		<i class="w3-button w3-display-left w3-black fas fa-angle-double-right" onclick="plusDivs(-1)" style="position: absolute;
+		top: 340px; transform: translate(0, -50%); left:1000px; font-size: 40px;"></i>
+		<i class="w3-button w3-display-right w3-black fas fa-angle-double-left" onclick="plusDivs(1)" style="position: absolute;
+		top: 340px; transform: translate(0, -50%); left:540px; font-size: 40px;"></i>
+
+	</div>
+	</div>
+	  	
+	<div id="loading">
+	  	tetris
+	</div>
+
+	
+		<div style="position: absolute; bottom: 50px;left: 20px;font-size: 27px; font-family: chiller; font-weight: bold;">Come To Back</div>
+			<i class="fas fa-angle-double-right" style="position: absolute; bottom: 50px; left: 150px; font-size: 27px; color: grey;"></i>
+			<div class="button-container" style="font-family: chiller;font-weight: bold;">
+			  <a onclick="window.close()" href="#" class="btn" style="font-size: 25px; text-decoration: none; position: absolute; top: 580px; left: 200px; border-bottom: 1px solid #0000e6; color: #0000e6;"><span>EXIT</span></a>
+			  <a href="home page.html" class="btn" style="font-size: 25px; text-decoration: none; position: absolute; top: 580px; left: 260px; border-bottom: 1px solid #a557c1; color: #a557c1;"><span>HOME</span></a>
+		</div>
+	
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+	
+
+</body>
+</html
